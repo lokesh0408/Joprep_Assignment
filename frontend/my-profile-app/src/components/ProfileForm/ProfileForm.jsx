@@ -13,7 +13,7 @@ const ProfileForm = () => {
 
   useEffect(() => {
     axios
-      .get("https://joprep-assignment.netlify.app/profile")
+      .get("http://localhost:5000/profile")
       .then((response) => setProfile(response.data))
       .catch((error) => console.error("Error fetching profile:", error));
   }, []);
