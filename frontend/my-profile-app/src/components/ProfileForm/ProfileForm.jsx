@@ -91,7 +91,6 @@ const ProfileForm = () => {
                 value={profile.firstName}
                 onChange={handleChange}
                 className="input-field"
-                required
               />
             </div>
             <div className="form-group">
@@ -102,7 +101,6 @@ const ProfileForm = () => {
                 value={profile.lastName}
                 onChange={handleChange}
                 className="input-field"
-                required
               />
             </div>
           </div>
@@ -115,7 +113,6 @@ const ProfileForm = () => {
               onChange={handleChange}
               className="input-field input-full-width"
               placeholder="jane@acme.com"
-              required
             />
           </div>
           <div className="form-group">
@@ -125,7 +122,6 @@ const ProfileForm = () => {
               value={profile.address}
               onChange={handleChange}
               className="input-field input-full-width textarea"
-              required
             ></textarea>
           </div>
           <div className="form-actions">
