@@ -13,7 +13,7 @@ const ProfileForm = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/profile")
+      .get("https://joprep-assignment.vercel.app/profile")
       .then((response) => setProfile(response.data))
       .catch((error) => console.error("Error fetching profile:", error));
   }, []);
@@ -41,7 +41,7 @@ const ProfileForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/profile", profile)
+      .post("https://joprep-assignment.vercel.app/profile", profile)
       .then((response) => console.log("Profile saved:", response))
       .catch((error) => console.error("Error saving profile:", error));
   };
