@@ -1,0 +1,166 @@
+.profile-form {
+  padding: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  background-color: #f7fafc;
+}
+
+@media (max-width: 768px) {
+  .profile-form {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .upload-photo {
+    margin-top: 10px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .save-button {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-form {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .upload-photo {
+    margin-bottom: 10px;
+  }
+
+  .file-label {
+    padding: 5px;
+    font-size: 0.75em;
+  }
+}
+
+.profile-content {
+  margin-left: 160px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0d141c;
+}
+
+.upload-photo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.file-label {
+  background-color: #e8edf2;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 0.825em;
+  font-weight: 600;
+}
+
+.camera-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.upload-photo input[type="file"] {
+  display: none;
+}
+
+.profile-photo {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.form {
+  border: none;
+  outline: none;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-group {
+  display: flex;
+  gap: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fafafb;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.input-field.input-full-width {
+  max-width: 408px;
+}
+
+.textarea {
+  height: 120px;
+  resize: none;
+  border-radius: 16px;
+}
+
+.form-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.reset-button {
+  background-color: #e8edf2;
+  color: #000;
+  margin-right: 10px;
+}
+
+.save-button {
+  background-color: #1a80e5;
+  color: #fff;
+  margin-right: 150px;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.8);
+}
